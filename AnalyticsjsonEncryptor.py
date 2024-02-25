@@ -6,7 +6,7 @@ import base64
 import binascii
 
 # AES key used for encryption and decrypion for analytic JSON file (in hex format)
-aes_key_hex = "b14ca5898a4e4133bbce2ea2315a1916"
+aes_key_hex = "[you key goes here]"
 aes_key_bytes = bytes.fromhex(aes_key_hex) # Convert hex key to bytes
 iv = b'\x00' * 16  # IV used in C# encryption
 cipher = Cipher(algorithms.AES(aes_key_bytes), modes.CBC(iv), backend=default_backend()) # Create AES cipher with CBC mode
