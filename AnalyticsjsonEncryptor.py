@@ -64,15 +64,15 @@ Decrypted_file = 'C:\\Users\\hp\\Documents\\analytic_json\\Decrypted\\transforme
 auth = str(input("Please enter your 'first' and 'last' letter of your full name (Eg: virat kohli = vi): \n "))
 if auth in ['ar', 'si', 'pr', 've', 'sr', 'sm', 'sa']:
     print("Authentication is successful")
-    choice = int(input("Please select one: Enter 1 for encryption / 2 for decryption: "))
-    if choice == 1:
-        encryption(input_file, Encrypted_file)
-        print("Encrypted data has saved to path:", Encrypted_file)
-        # print("Encryption is disabled")
-    elif choice == 2:
-        decryption(input_file, Decrypted_file)
-        print("Decrypted data has saved to path:", Decrypted_file)
-    else:
-        print("Invalid choice.")
+    # choice = int(input("Please select one: Enter 1 for encryption / 2 for decryption: "))
+    # if choice == 1:
+    #     encryption(input_file, Encrypted_file)
+    #     print("Encrypted data has saved to path:", Encrypted_file)
+    #     # print("Encryption is disabled")
+    # elif choice == 2:
+    #     decryption(input_file, Decrypted_file)
+    #     print("Decrypted data has saved to path:", Decrypted_file)
+    # else:
+    #     print("Invalid choice.")
 else:
     print("Authentication Failed")
